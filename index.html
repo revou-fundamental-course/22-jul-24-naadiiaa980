@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jastip Ceria</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,7 +13,7 @@
             <h1><i>Jastip Ceria</i></h1>
             <nav>
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
+                <a href="#testimoni">Testimoni</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -30,7 +31,29 @@
             <div class="content">
                 <img src="https://i.pinimg.com/564x/f2/03/71/f203719d65923a8f2453344894684628.jpg" alt="Deskripsi Gambar" />
                 <p><i>"Kepuasan pelanggan adalah tugas kami"</i></p>
-                <h3>Desi Permata</h3>
+                <div class="profile">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Desi Permata</span>
+                </div>
+                <span class="profile-description">pengusaha muda</span>
+                <div class="information">
+                    <h5>
+                        "Jastip Ceria adalah layanan jasa titip yang menyediakan akses ke barang-barang eksklusif
+                         dari seluruh dunia. Kami berkomitmen untuk memberikan pengalaman belanja yang menyenangkan 
+                         dengan harga yang bersaing dan layanan pelanggan yang unggul."</h5>
+                    <h5> Berikut ini merupakan beberapa kelebihan yang dimiliki oleh jasa kami:</h5>
+                </div>
+                <ul class="icon-list">
+                    <li><i class="fas fa-check-circle"></i>Akses ke Barang Eksklusif</li>
+                    <li><i class="fas fa-check-circle"></i>Hemat Waktu dan Biaya</li>
+                    <li><i class="fas fa-check-circle"></i>Kemudahan dan Kenyamanan</li>
+                    <li><i class="fas fa-check-circle"></i>Harga yang Lebih Murah</li>
+                    <li><i class="fas fa-check-circle"></i>Barang yang Autentik</li>
+                    <li><i class="fas fa-check-circle"></i>Custom Order</li>
+                    <li><i class="fas fa-check-circle"></i>Bantuan Pembelian</li>
+                    <li><i class="fas fa-check-circle"></i>Fleksibilitas Pengiriman</li>
+                    <li><i class="fas fa-check-circle"></i>Hubungan Langsung dengan Penyedia Jasa</li>
+                </ul>
             </div>
             <div class="form-container">
                 <h2>Contact</h2>
@@ -41,10 +64,15 @@
                     
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="contoh@gmail.com" required>
-                    
-                    <label for="message">Pesan:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="ada yang bisa kami bantu?" required></textarea>
-                    
+
+                    <label for="barang">Pilih Barang:</label>
+                    <select name="barang" id="barang">
+                        <option value="" disabled selected hidden>Pilih Barang</option>
+                        <option value="pakaian">Pakaian</option>
+                        <option value="aksesoris">Aksesoris</option>
+                        <option value="sepatu">Sepatu</option>
+                        <option value="sendal">Sendal</option>
+                    </select>
                     <button type="submit">Kirim</button>
                 </form>
             </div>
