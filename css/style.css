@@ -17,179 +17,246 @@ header {
     margin: 15px;
 }
 
+/* CSS untuk banner */
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Batas maksimum lebar slider */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for the banner */
+}
+
+.banner-slide {
+    display: flex;
+    width: 300%;
+    animation: slide 60s infinite;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Batas maksimum lebar gambar */
+    max-height: 450px; /* Batas maksimum tinggi gambar */
+    object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+}
+
+.banner-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* CSS untuk form */
+.form-container {
+    background-color: rgb(255, 200, 209);
+    padding: 45px;
+    margin-left: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: rgb(241, 136, 154);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    padding: 14px 20px;
     border: 2px solid black;
+    padding: 10px;
     border-radius: 5px;
+    text-decoration: none; 
+    color: black; 
 }
 
 .welcome-message {
     text-align: center;
+    padding: 20px 0;
+    background-color: lightskyblue;
+}
+
+main {
     padding: 20px;
+    background-color: lightskyblue;
+    text-align: left;
 }
 
-.welcome-message h1 {
-    margin-bottom: 10px;
+main h1 {
+    margin-top: 0;
 }
 
-.welcome-message p {
-    margin: 0;
-}
-
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px; 
-}
-
-.main-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-.main-content p,
-.main-content h3 {
-    text-align: center;
-    margin: 10px 0; 
-}
-
-.content {
-    flex: 1;
-    max-width: 400px;
-    box-sizing: border-box;
+.customer-satisfaction {
+    margin-left: 280px;
+    font-style: italic;
+    background-color: lightskyblue;
 }
 
 .profile {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .profile i {
-    font-size: 40px;
-    color: #756f6f;
-    margin-right: 17px; 
+    font-size: 24px;
+    margin-left: -500px;
 }
 
 .profile span {
-    font-size: 15px;
     font-weight: bold;
-    color: #333;
-    padding-block: 30px;
-    margin-top: -14px;
 }
 
 .profile-description {
     display: block;
-    text-align: center;
-    margin-left: 65px;
-    margin-top: -25px;
-    color: #838282;
-    font-size: 14px;
+    margin-left: 370px;
     font-style: italic;
 }
 
 .information {
-    padding-block: 22px 1px;
-    text-align: center;
+    margin-top: 20px;
 }
 
 .icon-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .icon-list li {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.icon-list li i {
-    margin-right: 10px; 
-    color: #f77db6;
+.icon-list i {
+    color: rgb(241, 136, 154);;
 }
 
-.form-container {
-    width: 100%;
-    max-width: 300px;
-    background-color: #f5b2d1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-}
-
-.form-container h2 {
+footer {
     text-align: center;
-    margin-bottom: 20px;
-    color: black;
+    padding: 10px 0;
+    background-color: lightskyblue;
 }
 
-.form-container p {
-    margin-bottom: 15px;
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.form-container label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: black;
+.feature {
+    background-color: rgb(255, 200, 209);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
 }
 
-.form-container input,
-.form-container textarea,
-.form-container select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: black;
+.feature h3 {
+    margin-top: 0;
 }
 
-.form-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #f77db6;
+.cta-section {
+    background-color: lightskyblue;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta-section button {
+    padding: 10px 20px;
+    background-color: rgb(241, 136, 154);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Media Queries for Responsiveness */
+.testimoni-message {
+    text-align: center;
+    padding: 20px 0;
+    background-color: lightskyblue;
+}
+
+/* Media Query untuk membuat situs responsif */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    
     nav {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        width: 100%;
     }
 
-    .main-content {
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-form-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .content,
     .form-container {
-        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 90%;
+        margin-bottom: 20px;
     }
 }
